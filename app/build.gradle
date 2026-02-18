@@ -16,9 +16,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    namespace 'com.kenschenke.ftabuddy'
+    namespace = 'com.kenschenke.ftabuddy'
     buildFeatures {
-        viewBinding true
+        viewBinding = true
     }
     compileOptions {
         targetCompatibility JavaVersion.VERSION_17
