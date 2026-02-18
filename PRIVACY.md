@@ -1,10 +1,10 @@
-# Privacy Policy for FTA Buddy
+# Privacy Policy for CSA Buddy
 
 **Effective Date:** 2024-02-10
 
 ## Introduction
 
-I, Ken Schenke, the developer of FTA Buddy ("App"), am committed to respecting the privacy of my users. This Privacy Policy explains how I collect, use, and share information when you use the App.
+I, Ken Schenke, the developer of CSA Buddy ("App"), am committed to respecting the privacy of my users. This Privacy Policy explains how I collect, use, and share information when you use the App.
 
 ## Data Collection and Use
 

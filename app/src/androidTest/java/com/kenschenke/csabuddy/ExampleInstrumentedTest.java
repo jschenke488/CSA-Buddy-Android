@@ -1,4 +1,4 @@
-package com.kenschenke.ftabuddy;
+package com.kenschenke.csabuddy;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.kenschenke.ftabuddy", appContext.getPackageName());
+        assertEquals("com.kenschenke.csabuddy", appContext.getPackageName());
     }
 }

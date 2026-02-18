@@ -1,6 +1,5 @@
-package com.kenschenke.ftabuddy;
+package com.kenschenke.csabuddy;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 

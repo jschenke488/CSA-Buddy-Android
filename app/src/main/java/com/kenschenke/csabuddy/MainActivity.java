@@ -1,4 +1,4 @@
-package com.kenschenke.ftabuddy;
+package com.kenschenke.csabuddy;
 
 import android.os.Bundle;
 import android.os.Handler;

@@ -1,4 +1,4 @@
-package com.kenschenke.ftabuddy;
+package com.kenschenke.csabuddy;
 
 
 import android.content.SharedPreferences;
@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.kenschenke.ftabuddy.databinding.FragmentFlashCardsBinding;
+import com.kenschenke.csabuddy.databinding.FragmentFlashCardsBinding;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.color.MaterialColors;
 
@@ -43,7 +43,7 @@ public class FlashCardsFragment extends Fragment {
         });
 
         // TODO: Create a way to add and remove your own flashcards
-        flashcardPrefs = requireContext().getSharedPreferences("FTABuddy", 0);
+        flashcardPrefs = requireContext().getSharedPreferences("CSABuddy", 0);
         flashcards = new HashSet<>(flashcardPrefs.getStringSet("flashcards", new HashSet<>(Arrays.asList(root.getResources().getStringArray(R.array.default_flashcards)))));
 
 

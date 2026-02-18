@@ -1,4 +1,4 @@
-package com.kenschenke.ftabuddy;
+package com.kenschenke.csabuddy;
 
 import org.junit.Test;
 

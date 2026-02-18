@@ -1,4 +1,4 @@
-package com.kenschenke.ftabuddy;
+package com.kenschenke.csabuddy;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -22,9 +22,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import java.net.MalformedURLException;
-import java.net.URL;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -93,7 +90,7 @@ public class FieldMonitorFragment extends Fragment {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        SharedPreferences prefs = getActivity().getSharedPreferences("com.kenschenke.ftabuddy", Context.MODE_PRIVATE);
+        SharedPreferences prefs = getActivity().getSharedPreferences("com.kenschenke.csabuddy", Context.MODE_PRIVATE);
         String url = prefs.getString("FieldMonitor", "");
         webView.loadUrl(url.isEmpty() ? getString(R.string.url_welcome) : url);
     }
@@ -136,7 +133,7 @@ public class FieldMonitorFragment extends Fragment {
             url = "http://".concat(url);
         }
 
-        SharedPreferences prefs = getActivity().getSharedPreferences("com.kenschenke.ftabuddy", Context.MODE_PRIVATE);
+        SharedPreferences prefs = getActivity().getSharedPreferences("com.kenschenke.csabuddy", Context.MODE_PRIVATE);
         prefs.edit().putString("FieldMonitor", url).apply();
 
         webView.loadUrl(url);

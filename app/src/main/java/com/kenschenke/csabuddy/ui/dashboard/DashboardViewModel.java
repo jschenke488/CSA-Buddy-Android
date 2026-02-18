@@ -1,4 +1,4 @@
-package com.kenschenke.ftabuddy.ui.dashboard;
+package com.kenschenke.csabuddy.ui.dashboard;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
