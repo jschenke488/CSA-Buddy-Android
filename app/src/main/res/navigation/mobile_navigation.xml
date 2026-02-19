@@ -3,19 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_field_monitor">
-
-    <fragment
-        android:id="@+id/navigation_field_monitor"
-        android:name="com.kenschenke.csabuddy.FieldMonitorFragment"
-        android:label="@string/title_field_monitor"
-        tools:layout="@layout/fragment_field_monitor" />
-
-    <fragment
-        android:id="@+id/navigation_flash_cards"
-        android:name="com.kenschenke.csabuddy.FlashCardsFragment"
-        android:label="@string/title_flash_cards"
-        tools:layout="@layout/fragment_flash_cards" />
+    app:startDestination="@+id/navigation_reference">
 
     <fragment
         android:id="@+id/navigation_reference"

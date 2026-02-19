@@ -3,16 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_field_monitor"
-        android:icon="@drawable/baseline_desktop_windows_black_18dp"
-        android:title="@string/title_field_monitor" />
-
-    <item
-        android:id="@+id/navigation_flash_cards"
-        android:icon="@drawable/baseline_insert_comment_black_18dp"
-        android:title="@string/title_flash_cards" />
-
-    <item
         android:id="@+id/navigation_reference"
         android:icon="@drawable/baseline_library_books_black_18dp"
         android:title="@string/title_reference" />
