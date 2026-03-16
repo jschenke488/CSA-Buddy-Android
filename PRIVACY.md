@@ -1,6 +1,6 @@
 # Privacy Policy for CSA Buddy
 
-**Effective Date:** 2024-02-10
+**Effective Date:** 2026-03-08
 
 ## Introduction
 
