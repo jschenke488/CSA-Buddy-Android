@@ -1,5 +1,6 @@
 package com.kenschenke.csabuddy;
 
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -62,6 +63,8 @@ public class ReferenceFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        Constants.loadPrefs(getContext());
     }
 
     @Override
@@ -75,12 +78,22 @@ public class ReferenceFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        boolean isAccessibilityMode = false;
+        do {
+            if (getActivity() != null && Constants.isPrefsLoaded) {
+                isAccessibilityMode = Constants.prefs.getBoolean("accessibilityMode", false);
+                System.out.println(isAccessibilityMode);
+            }
+        } while (!Constants.isPrefsLoaded);
+
+        String file = (isAccessibilityMode) ? "reference-accessible.html" : "reference.html";
+
         WebView webView = (WebView)getView().findViewById(R.id.webView);
         webView.setWebViewClient(new CustomWebViewClient(getContext()));
         webView.getSettings().setSupportZoom(true);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setDisplayZoomControls(true);
-        webView.loadUrl("file:///android_asset/reference.html");
+        webView.loadUrl("file:///android_asset/" + file);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
