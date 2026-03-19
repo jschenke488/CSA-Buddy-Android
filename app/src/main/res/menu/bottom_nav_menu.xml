@@ -7,6 +7,10 @@
         android:icon="@drawable/baseline_library_books_black_18dp"
         android:title="@string/title_reference" />
     <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="@string/title_settings" />
+    <item
         android:id="@+id/navigation_about"
         android:icon="@drawable/baseline_info_black_18dp"
         android:title="@string/title_about" />

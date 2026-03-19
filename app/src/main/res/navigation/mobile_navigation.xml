@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_reference" />
 
     <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.kenschenke.csabuddy.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
         android:id="@+id/navigation_about"
         android:name="com.kenschenke.csabuddy.AboutFragment"
         android:label="@string/title_about"
