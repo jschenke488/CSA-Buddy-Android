@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId = "com.kenschenke.csabuddy"
         minSdkVersion 23
-        targetSdkVersion 35
+        targetSdkVersion 36
         versionCode = 12
         versionName = "2.0.1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
