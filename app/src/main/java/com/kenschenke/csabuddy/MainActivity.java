@@ -1,10 +1,14 @@
 package com.kenschenke.csabuddy;
 
+import android.content.Context;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
 import androidx.activity.EdgeToEdge;
 import androidx.activity.SystemBarStyle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.compose.foundation.DarkThemeKt;
+import androidx.compose.foundation.DarkTheme_androidKt;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -19,9 +23,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Explicitly set the status bar to dark (light icons) and navigation bar to auto
-        EdgeToEdge.enable(this, 
-                SystemBarStyle.dark(Color.TRANSPARENT),
-                SystemBarStyle.dark(Color.TRANSPARENT));
+        int currentNightMode = getApplicationContext().getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        boolean isNightMode = currentNightMode == Configuration.UI_MODE_NIGHT_YES;
+
+        if (isNightMode) {
+            EdgeToEdge.enable(this,
+                    SystemBarStyle.dark(Color.TRANSPARENT),
+                    SystemBarStyle.dark(Color.TRANSPARENT));
+        } else {
+            EdgeToEdge.enable(this);
+        }
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
