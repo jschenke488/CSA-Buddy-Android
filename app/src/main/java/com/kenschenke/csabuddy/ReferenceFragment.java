@@ -1,5 +1,6 @@
 package com.kenschenke.csabuddy;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -74,6 +75,7 @@ public class ReferenceFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_reference, container, false);
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -93,6 +95,8 @@ public class ReferenceFragment extends Fragment {
         webView.getSettings().setSupportZoom(true);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setDisplayZoomControls(true);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setUserAgentString("CSABuddy");
         webView.loadUrl("file:///android_asset/" + file);
     }
 
