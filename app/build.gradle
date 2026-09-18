@@ -2,29 +2,30 @@ apply plugin: 'com.android.application'
 apply plugin: 'org.jetbrains.kotlin.plugin.compose'
 
 android {
-    compileSdkVersion = 36
+    compileSdkVersion 36
     defaultConfig {
-        applicationId = "com.kenschenke.csabuddy"
+        applicationId "com.kenschenke.csabuddy"
         minSdkVersion 23
         targetSdkVersion 36
-        versionCode = 18
-        versionName = "2.0.7"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        versionCode 18
+        versionName "2.0.7"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
-            minifyEnabled = false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    namespace = 'com.kenschenke.csabuddy'
+    namespace 'com.kenschenke.csabuddy'
     buildFeatures {
-        viewBinding = true
-        compose = true
+        viewBinding true
+        compose true
     }
     compileOptions {
-        targetCompatibility = JavaVersion.VERSION_17
-        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_17
     }
 }
 
