@@ -19,3 +19,14 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Keep ViewBinding bindings from being stripped
+-keep public class * implements androidx.viewbinding.ViewBinding {
+    public static * inflate(...);
+    public static * bind(...);
+}
+
+# Jetpack Navigation Safe Args / dynamic lookups protection
+-keepclassmembers class * extends androidx.fragment.app.Fragment {
+    public <init>(...);
+}
