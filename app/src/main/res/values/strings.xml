@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">CSA Buddy</string>
     <string name="title_reference">Reference</string>
+    <string name="title_guides">Guides</string>
     <string name="title_about">About</string>
 
     <string name="title_settings">Settings</string>
